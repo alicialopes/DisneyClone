@@ -1,0 +1,52 @@
+section {
+    padding: 20px 5%;
+}
+
+section h3{
+    color: #ffffff;
+    font-weight: 100;
+    margin: 0 0 10px 0;
+}
+
+section .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+section .cards .card {
+    position: relative;
+    width: 100%;
+    transition: 500ms;
+    cursor: pointer;
+}
+
+section .cards .card img {
+    border: 4px groove #ffffff00;  
+    box-shadow: rgb(0 0 0 / 69%) 0px 26px 30px -10px, rgba(0, 0, 0, 0) 0px 16px 10px -10px;
+    width: 100%;
+    border-radius: 2%;
+    transition: 400ms;
+}
+
+section .cards .card:hover {
+    transform: scale(1.03);
+}
+
+section .cards .card:hover img{
+    border: 4px groove #ffffff;
+}
+
+@media (max-width: 1055px) {
+    section .cards {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+}
+
+@media (max-width: 450px) {
+    section .cards {
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+}

@@ -1,0 +1,111 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 35px;
+    position: fixed;
+    width: 100%;
+    transition: 400ms;
+    z-index: 2000;
+}
+
+header.scroll {
+    background-color: rgb(17, 21, 36);
+    padding: 10px 30px;
+}
+
+header .disneyintr{
+    display: flex;
+    align-items: center; 
+    gap: 60px
+} 
+
+header .disneyintr img {
+    width: 75px;
+}
+
+header .disneyintr nav ul {
+    display: flex;
+    gap: 50px;
+}
+
+header .disneyintr nav ul li a {
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    text-decoration: none;
+    gap: 15px;
+    text-transform: uppercase;
+    transition: 200ms;
+}
+
+header .disneyintr nav ul li a:hover span::after {
+    width: 100%;
+    opacity: 1;
+}
+
+header .disneyintr nav ul li img {
+    width: 18px;
+    margin: 0;
+} 
+
+header .disneyintr nav ul li a span {
+    position: relative;
+}
+
+header .disneyintr nav ul li a span::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 20px;
+    height: 2px;
+    background-color: #ffffff;
+    opacity: 0;
+    transition: 200ms;
+}
+
+header .profile {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+header .profile:hover span{
+    opacity: 0.9;
+}
+
+header .profile:hover img{
+    opacity: 0.6;
+}
+
+header .profile span {
+    opacity: 0;
+    transition: 200ms;
+}
+
+header .profile img {
+    width: 50px;
+    transition: 200ms;
+}
+
+@media (max-width: 1055px) {
+    header .disneyintr nav ul li a span {
+        display: none;
+    }
+
+    header .disneyintr nav ul{
+        gap: 40px;
+    }
+
+    header .disneyintr nav ul li a:hover {
+        opacity: 0.6;
+    }
+}
+
+@media (max-width: 590px) {
+    header .profile {
+        display: none;
+    }
+}
