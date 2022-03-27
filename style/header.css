@@ -105,7 +105,14 @@ header .profile img {
 }
 
 @media (max-width: 590px) {
+    header {
+        justify-content: center;
+    }
     header .profile {
         display: none;
+    }
+
+    header .disneyintr nav ul{
+        gap: 30px;
     }
 }
