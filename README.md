@@ -1,6 +1,6 @@
-# Clone Disney+ BY Alícia Lopes
+# Clone Disney+ BY Alícia Lopes ✨
 
-## First clone made based on Disney+ website.
+## First clone made based on Disney+ website 💕
 
 Starting the project, it's possible to visualize a responsive navbar and an animation. Initial project area:
 
@@ -11,7 +11,7 @@ After scrolling, we can see the cards area, where different topics are shown to 
 ![Screenshot](./images/print2.png)
 ![Screenshot](./images/print3.png)
 
-## Technologies used during the project:
+## Technologies used during the project 👾
 - HTML
 - CSS
 - javascript
